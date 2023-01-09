@@ -6,7 +6,6 @@ import ClientRow from './ClientRow';
 
 const Clients = () => {
   const { data, loading, error } = useQuery(GET_CLIENTS);
-  console.log(data, loading, error);
 
   if (loading) return <Spinner />;
   if (error) return `Something went wrong: ${error.message}`;
